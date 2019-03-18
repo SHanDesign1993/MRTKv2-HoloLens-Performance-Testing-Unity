@@ -1,5 +1,5 @@
 # Unity-HoloLens-Performance-Test-Graph
-test device performance (HoloLens) with force-directed graph using MRTKv2 sdk.
+test device performance (HoloLens) with force-directed graph using <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/">MRTKv2 sdk</a>.
 
 # Requirements
 Unity 2019.1.0 or later  
