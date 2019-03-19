@@ -1,26 +1,15 @@
-﻿using Microsoft.MixedReality.Toolkit.Core.Services;
-using Microsoft.MixedReality.Toolkit.Core.Providers.UnityInput;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.WSA;
-using UnityEngine.UI;
-using Microsoft.MixedReality.Toolkit.Core.Utilities.Async;
 using TMPro;
 
 public class DemoExample : MonoBehaviour
 {
     [SerializeField]
-    Text mouseInfo;
-    [SerializeField]
-    Text screenInfo;
-    [SerializeField]
     TextMeshPro objInfo;
     string objID = "demo_anchor";
     [SerializeField]
     GameObject demoObj;
-    //test: get the device manager of mouse 
-    MouseDeviceManager mouseManager;
-
 
     public void RecenterView()
     {
@@ -76,28 +65,5 @@ public class DemoExample : MonoBehaviour
 
     public void DeleteAllObj() {
         WorldAnchorManager.Instance.ClearAllObject();
-    }
-
-    private async void Start()
-    {
-        //wait MRTK register extended service
-        await new WaitUntil(() => MixedRealityToolkit.RegisteredMixedRealityServices != null);
-        foreach (var service in MixedRealityToolkit.RegisteredMixedRealityServices)
-        {
-            //get mouse service by name
-            if (service.Item2.Name == "Mouse")
-                mouseManager = (MouseDeviceManager)service.Item2;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (!Input.mousePresent) { mouseInfo.text = "Not Found"; return; }
-
-        if (screenInfo)
-            screenInfo.text = Screen.width + " x " + Screen.height;
-        if (mouseInfo)
-            mouseInfo.text = "(" + Input.mousePosition.x + "," + Input.mousePosition.y + ")";
     }
 }

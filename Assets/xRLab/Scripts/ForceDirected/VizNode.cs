@@ -1,5 +1,6 @@
 ﻿using ForceDirected;
 using UnityEngine;
+using TMPro;
 
 namespace xRLab.ForceDirected
 {
@@ -7,7 +8,7 @@ namespace xRLab.ForceDirected
     public class VizNode : MonoBehaviour //: PointerEventTrigger
     {
         [SerializeField]
-        public TextMesh Text;
+        public TextMeshPro Text;
 
         public Node Node { get; private set; }
 
