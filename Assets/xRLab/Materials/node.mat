@@ -9,14 +9,14 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: node
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
-  m_ShaderKeywords: _ALPHABLEND_ON _BORDER_LIGHT _BORDER_LIGHT_USES_HOVER_COLOR _HOVER_COLOR_OVERRIDE
-    _HOVER_LIGHT _RIM_LIGHT _SPECULAR_HIGHLIGHTS
+  m_ShaderKeywords: _BORDER_LIGHT _BORDER_LIGHT_USES_HOVER_COLOR _DISABLE_ALBEDO_MAP
+    _HOVER_COLOR_OVERRIDE _HOVER_LIGHT _RIM_LIGHT _SPECULAR_HIGHLIGHTS
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2000
   stringTagMap:
-    RenderType: Transparent
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -74,7 +74,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7b551659cf4349242ba72d82b4f9cdc7, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex2:
@@ -152,7 +152,7 @@ Material:
     - _ColorWriteMask: 15
     - _Cull: 0
     - _CullMode: 2
-    - _CustomMode: 2
+    - _CustomMode: 0
     - _Cutoff: 0.5
     - _Darken: 0
     - _DetailNormalMapScale: 1
@@ -161,7 +161,7 @@ Material:
     - _DistortionEnabled: 0
     - _DistortionStrength: 1
     - _DistortionStrengthScaled: 0
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _EdgeSmoothingValue: 0.002
     - _EffectAberration: 0.5
     - _EmissionEnabled: 0
@@ -200,7 +200,7 @@ Material:
     - _JitterMultiplier: 0
     - _LightingEnabled: 0
     - _Metallic: 0
-    - _Mode: 2
+    - _Mode: 0
     - _NearPlaneFade: 0
     - _NormalMapScale: 1
     - _OcclusionStrength: 1
@@ -232,7 +232,7 @@ Material:
     - _SpecularHighlights: 1
     - _SphericalHarmonics: 0
     - _SquareTiles: 0
-    - _SrcBlend: 5
+    - _SrcBlend: 1
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilComparison: 0
@@ -252,12 +252,12 @@ Material:
     - _UseUIAlphaClip: 0
     - _VertexColors: 0
     - _ZTest: 4
-    - _ZWrite: 0
+    - _ZWrite: 1
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _ClippingBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 0.7794118, g: 0.7794118, b: 0.7794118, a: 0.78431374}
+    - _Color: {r: 0.20291919, g: 0.754717, b: 0.69055444, a: 0.78431374}
     - _Color2: {r: 1, g: 1, b: 1, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

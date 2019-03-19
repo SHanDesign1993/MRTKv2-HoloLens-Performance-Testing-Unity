@@ -461,7 +461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &944035616
 Transform:
   m_ObjectHideFlags: 0
@@ -470,7 +470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944035615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.231, y: -0.6, z: 1.5375}
+  m_LocalPosition: {x: -0.139, y: -0.572, z: 1.3525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1089270799}
@@ -527,9 +527,20 @@ MonoBehaviour:
         m_MethodName: SaveObj
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 4608705769509071299}
+          m_ObjectArgument: {fileID: 4607648212368740554}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 100
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 944035615}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1071,9 +1082,29 @@ MonoBehaviour:
           m_StringArgument: demo_coffee
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 944035615}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Events: []
+  Events:
+  - Name: CustomEvent
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    ClassName: CustomInteractablesReceiver
+    Settings: []
+    HideUnityEvents: 1
 --- !u!1 &1721071695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,7 +2715,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056917288534078180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0703, z: 0.2641}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 1157583015617720384}
@@ -3419,7 +3450,7 @@ WorldAnchor:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4608705769509071299}
+  m_GameObject: {fileID: 4607648212368740554}
   serializedVersion: 2
 --- !u!1 &5116062015678874608
 GameObject:
@@ -3636,7 +3667,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4602899899989623515}
+  - {fileID: 4607648212368740794}
   - {fileID: 1161914885009095800}
   - {fileID: 1026376138}
   - {fileID: 944035616}
@@ -5939,7 +5970,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4602899899989623515}
+    m_TransformParent: {fileID: 4607648212368740794}
     m_Modifications:
     - target: {fileID: 1083549605185280, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
       propertyPath: m_Name
@@ -6019,7 +6050,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 4608705769509071299}
+      objectReference: {fileID: 4607648212368740554}
     - target: {fileID: 114254035704318198, guid: afaef0108a478c44a9eac26658bc29bf,
         type: 3}
       propertyPath: lineStartClamp
@@ -6482,13 +6513,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cced5cda1d8ca54ba3287622be0d332, type: 3}
---- !u!4 &4602899899989623515 stripped
+--- !u!4 &4607648212368740794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4906782831137386, guid: 1cced5cda1d8ca54ba3287622be0d332,
     type: 3}
   m_PrefabInstance: {fileID: 4607648212368740529}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4608705769509071299 stripped
+--- !u!1 &4607648212368740554 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1353334494755186, guid: 1cced5cda1d8ca54ba3287622be0d332,
     type: 3}
